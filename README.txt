@@ -1,0 +1,1 @@
+Extract → upload to GitHub → deploy on Hostinger Node.js Web App
