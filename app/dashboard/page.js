@@ -120,7 +120,7 @@ export default function Dashboard() {
       <div style={{ padding: 28, maxWidth: 1100, margin: "0 auto" }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: 16 }}>
           <div>
-            <h1 style={{ margin: 0, fontSize: 24 }}>Inventory Dashboard</h1>
+            <h1 style={{ margin: 0, fontSize: 24 }}>Inventory Dashboard (INV1)</h1>
             <div style={{ color: "#aaa", fontSize: 13, marginTop: 6 }}>
               Signed in as: <b style={{ color: "#fff" }}>{email || "..."}</b>
             </div>
