@@ -1,0 +1,47 @@
+:root{
+  --bg:#0b0b0b; --panel:#111; --panel2:#0f0f0f;
+  --border:#232323; --text:#fff; --muted:#a3a3a3;
+}
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto}
+
+.container{max-width:1200px;margin:0 auto;padding:28px 18px}
+.header{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.h1{font-size:22px;font-weight:800;margin:0}
+.muted{color:var(--muted);font-size:13px;margin-top:6px}
+
+.btn{border:1px solid var(--border);background:#141414;color:#fff;padding:10px 12px;border-radius:12px;cursor:pointer}
+.btnPrimary{background:#fff;color:#000;font-weight:800}
+.btnDanger{background:#1a0f0f}
+.pills{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.pill{padding:8px 12px;border-radius:999px;border:1px solid var(--border);background:#121212;color:#fff;cursor:pointer}
+.pillActive{background:#fff;color:#000;border-color:#fff;font-weight:800}
+
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:16px;padding:16px}
+.cardTitle{color:var(--muted);font-size:12px}
+.cardValue{font-size:24px;font-weight:900;margin-top:6px}
+
+.panel{background:var(--panel);border:1px solid var(--border);border-radius:16px;padding:16px;margin-top:16px}
+.panelTitle{margin:0;font-size:15px}
+
+.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:10px;margin-top:12px}
+.col2{grid-column:span 2}
+.col3{grid-column:span 3}
+.col4{grid-column:span 4}
+.col6{grid-column:span 6}
+.col12{grid-column:span 12}
+
+input,select{width:100%;padding:11px 12px;border-radius:12px;border:1px solid var(--border);background:#0b0b0b;color:#fff;outline:none}
+.tableWrap{overflow:auto;margin-top:12px;border-radius:14px;border:1px solid var(--border)}
+table{width:100%;border-collapse:collapse;min-width:1000px;background:var(--panel2)}
+th,td{padding:12px;border-bottom:1px solid #1a1a1a;text-align:left}
+th{color:var(--muted);font-size:12px;background:#121212;position:sticky;top:0}
+small{color:var(--muted)}
+
+@media (max-width: 900px){
+  .cards{grid-template-columns:1fr}
+  .col2,.col3,.col4,.col6{grid-column:span 12}
+  table{min-width:900px}
+}
