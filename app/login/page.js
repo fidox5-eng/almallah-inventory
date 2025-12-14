@@ -38,7 +38,7 @@ export default function LoginPage() {
         borderRadius: 16,
         padding: 24
       }}>
-        <h1 style={{ margin: 0, fontSize: 22 }}>Almallah Inventory</h1>
+        <h1 style={{ margin: 0, fontSize: 22 }}>Almallah Inventory (LIVE)</h1>
         <p style={{ marginTop: 8, marginBottom: 18, color: "#bbb" }}>Admin sign in</p>
 
         <form onSubmit={onSubmit} style={{ display: "grid", gap: 12 }}>
